@@ -6,7 +6,6 @@
 #include "Utilities.h"
 #include "Utilities.h"
 
-
 void loadData(const char* filename, sdds::Autoshop& as)
 {
 	std::ifstream file(filename);
@@ -26,7 +25,7 @@ void loadData(const char* filename, sdds::Autoshop& as)
 		//           "Invalid record!<endl>"
 
 		try {
-			sdds::Vehicle* aVehicle = sdds::createInstance(file);
+			sdds::Vehicle *aVehicle = sdds::createInstance(file);
 			if (aVehicle)
 				as += aVehicle;
 		}

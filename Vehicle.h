@@ -1,5 +1,5 @@
 // Workshop 6 - STL Containers
-// 2020/02/26 - Cornel
+// 2019/10/25 - Cornel
 
 #ifndef SDDS_VEHICLE_H
 #define SDDS_VEHICLE_H

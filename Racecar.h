@@ -10,9 +10,7 @@ namespace sdds {
 	public:
 		explicit Racecar(std::istream& in);
 		void display(std::ostream& out) const override;
-		// Use nodiscard to issue warning from compiler
-		// reference: https://en.cppreference.com/w/cpp/language/attributes/nodiscard
-		[[nodiscard]] double topSpeed() const override;
+		double topSpeed() const;
 	};
 } // sdds
 #endif

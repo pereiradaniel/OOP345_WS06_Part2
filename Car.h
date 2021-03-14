@@ -13,11 +13,9 @@ namespace sdds {
 	public:
 		Car() = default;
 		explicit Car(std::istream& fin); // fin = file in
-		// Use nodiscard to issue warning from compiler
-		// reference: https://en.cppreference.com/w/cpp/language/attributes/nodiscard
-		[[nodiscard]] std::string condition() const override;
-		[[nodiscard]] double topSpeed() const override;
-		void display(std::ostream& out) const override;
+		std::string condition() const;
+		double topSpeed() const;
+		void display(std::ostream& out) const;
 		~Car() override = default;
 	};
 } // sdds
